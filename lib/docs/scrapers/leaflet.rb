@@ -5,6 +5,7 @@ module Docs
     self.slug = 'leaflet'
     self.links = {
       home: 'https://leafletjs.com/',
+      license: 'https://raw.githubusercontent.com/Leaflet/Leaflet/master/LICENSE',
       code: 'https://github.com/Leaflet/Leaflet'
     }
 
@@ -18,6 +19,7 @@ module Docs
       &copy; 2010&ndash;2011, CloudMade<br>
       Maps &copy; OpenStreetMap contributors.
     HTML
+    options[:license] = 'BSD'
 
     version '1.6' do
       self.release = '1.6.0'

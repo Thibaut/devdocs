@@ -83,6 +83,8 @@ module Docs
         json[:links] = links if links.present?
         json[:version] = version if version.present? || defined?(@version)
         json[:release] = release if release.present?
+        json[:attribution] = options[:attribution] if !options[:attribution].nil?
+        json[:license] = options[:license] if !options[:license].nil?
         json
       end
 
